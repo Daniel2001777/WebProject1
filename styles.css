@@ -1,0 +1,182 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+.game{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.title{
+    color: blue;
+    position: absolute;
+    top: 10px;
+    font-size: 4rem;
+    background-color: rgb(140, 140, 255);
+    border-radius: 8px;
+    border-bottom: 4px solid blue;
+    border-right: 4px solid blue;
+}
+
+.score{
+    color: blue;
+    padding-top: 1em;
+    display: flex;
+    position: relative;
+    bottom: 50px;
+    z-index: 1;
+}
+
+.computerScore{
+    background-color: rgb(140, 140, 255);
+    border-radius: 8px;
+    border-bottom: 4px solid blue;
+    border-right: 4px solid blue;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.playerScore{
+    background-color: rgb(140, 140, 255);
+    border-radius: 8px;
+    border-bottom: 4px solid blue;
+    border-right: 4px solid blue;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-right: 10px;
+}
+
+.p-count, .c-count{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 0px;
+}   
+
+.options{
+    display: flex;
+    width: 50vw;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.rock, .paper, .scissor{
+    padding: 0.8rem;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background: rgb(255, 255, 140);
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-bottom: 4px solid yellow;
+    border-right: 4px solid yellow;
+    cursor: pointer;
+}
+
+.rock{
+    background-image: url("rock.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    color:transparent;
+}
+
+.scissor{
+    background-image: url("scissors.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    color:transparent;
+}
+
+.paper{
+    background-image: url("paper.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    color:transparent;
+}
+
+.move{
+    color:darkmagenta;
+    font-size: 3em;
+    font-weight: bold;
+    background-color: plum;
+    border-bottom: 4px solid darkmagenta;
+    border-right: 4px solid darkmagenta;
+    border-radius: 8px;
+}
+
+.reload{
+    color:black;
+    font-size: large;
+    font-weight: bold;
+    display: none;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: white;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.result{
+    margin-top: 20px;
+    font-size: 20px;
+    display: inline-block;
+    background-color: black;
+    border-radius: 10px;
+    line-height: 40px;
+    height: 40px;
+    width: fit-content;
+}
+
+.movesleft{
+    margin-top: 4px;
+    padding: 5px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 612px)
+{
+    .title{
+        text-align: center;
+    }
+    .score{
+        position: relative;
+        bottom: 10px;
+        
+    }
+    .options{
+        width: 100vw;
+    }
+}
+
+
+html{
+    box-sizing: border-box;
+}
+
+.bg{
+    background-image: url("background.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+img{
+    padding-top: 4rem;
+}
